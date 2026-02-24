@@ -55,6 +55,46 @@ This leaves the mystery in a puzzling state:
 | This temperature variation causes the observed UV baseline fluctuation | **Hypothesis — weakened by tube dissipation objection** |
 | The detailed mechanism at the detector (refractive index? direct absorbance?) | **Unknown** |
 
+## Why this mystery is interesting
+
+**The constraint is unusually tight.** Most unexplained instrumental artifacts are "some noise" or "some drift." This one has a precise functional form: ∝ dc/dt, bipolar. That’s a very specific fingerprint. Any correct theory must produce *exactly* a first derivative — not a peak, not an integral, not a convolution. This makes it a well-posed puzzle with a small answer space.
+
+**The elimination pattern is compelling.** The obvious paths have been systematically closed off:
+- Local heating at detector → rejected by simulation (not derivative-shaped)
+- Column temperature propagation → challenged by tube dissipation
+- Yet the observation persists, reproducibly
+
+This is the structure of a good scientific problem: clear data, falsifiable hypotheses, unexplained residual.
+
+## Unexplored alternative mechanisms
+
+The temperature hypothesis struggles with the tube dissipation objection. But temperature is not the only quantity that propagates from column to detector. Several alternatives bypass the tube dissipation problem entirely:
+
+### 1. Schlieren effect (refractive index gradient)
+
+Concentration gradients create refractive index gradients via dn/dc. At the detector window, a refractive index *gradient* can bend the UV beam (schlieren effect). The resulting intensity perturbation would be proportional to dn/dc · dc/dx, which at the detector maps to dc/dt. This does **not** require temperature survival through the tube — only that the concentration front retains a spatial gradient when it passes through the detector cell.
+
+### 2. Pressure / viscosity transients
+
+Viscosity changes with concentration → flow resistance changes → micro-pressure transients at the detector. Pressure fluctuations at the rising edge of a peak would reverse at the falling edge, producing a bipolar (derivative-shaped) signal.
+
+### 3. Discriminating experiment: wavelength dependence
+
+A key experiment: **is the fluctuation wavelength-dependent?**
+- If yes (strong wavelength dependence) → refractive index / schlieren mechanism
+- If no (weak wavelength dependence) → thermal or mechanical mechanism
+
+This would narrow the candidates significantly.
+
+## Publication potential
+
+Even without a confirmed explanation, a short communication presenting:
+1. The empirical observation quantitatively (dc/dt proportionality across multiple samples/wavelengths)
+2. The systematic elimination of candidate mechanisms
+3. The remaining candidate hypotheses
+
+would be publishable — it invites the community to solve the problem.
+
 ## Connection to the broader research programme
 
 If confirmed, this would connect to **Paper (b)** (Realistic Physical Constraints) in the [paper strategy](../modeling-vs-model_free/PAPER_VISION_DISCUSSION.md):
@@ -96,6 +136,9 @@ Rossi, B., et al. (2024). "Operando UV Resonance Raman study of DNA-ionic liquid
 - ❌ UV radiation at detector as heat source — rejected (heat-simulation result is not derivative-shaped)
 - ⚠️ Column-to-detector propagation — expert says temperature dissipates in the connecting tube
 - 🔑 No alternative explanation for the derivative shape has been identified
+- 🔲 Unexplored: schlieren effect (refractive index gradient from concentration front)
+- 🔲 Unexplored: pressure/viscosity transients
+- 🔲 Unexplored: wavelength dependence test (would discriminate refractive vs. thermal)
 - 🔲 Gap: mechanism by which temperature affects UV measurement at the detector spot (Li 2012 provides partial answer: ε_a depends on refractive index which depends on temperature)
 - 🔲 Quantitative comparison with real SEC-SAXS data
 - 🔲 Clarify relevance of Rossi 2024
