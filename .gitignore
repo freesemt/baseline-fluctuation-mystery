@@ -1,0 +1,16 @@
+__pycache__/
+temp*/
+*.pdf
+*.txt
+!*/README.md
+*.png
+!assets/*.png
+.vscode/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+.ipynb_checkpoints/
