@@ -1,6 +1,8 @@
-# Moved
+<!-- AI Context Standard v0.7 - Adopted: 2026-03-24 -->
+# AI Assistant Initialization Guide
 
-This file has been migrated to [`.github/copilot-instructions.md`](.github/copilot-instructions.md) (AI Context Standard v0.7).
+**Purpose**: Initialize AI context for the baseline-fluctuation-mystery repository  
+**Created**: February 24, 2026
 
 ---
 
@@ -23,7 +25,8 @@ An unsolved mystery in SEC-SAXS: the UV absorbance baseline shows a fluctuation 
 
 ```
 baseline-fluctuation-mystery/
-├── COPILOT-INIT.md        ← this file
+├── .github/
+│   └── copilot-instructions.md  ← this file (auto-loaded by GitHub Copilot)
 ├── README.md              ← problem statement and hypothesis tracking
 ├── reference_papers/      ← collected PDFs (non-isothermal LKM, UV-temperature)
 └── heat-simulation/       ← tests the "UV radiation as heat source" hypothesis (rejected)
