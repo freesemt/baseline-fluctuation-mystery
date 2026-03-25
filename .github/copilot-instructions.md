@@ -1,4 +1,4 @@
-<!-- AI Context Standard v0.7 - Adopted: 2026-03-24 -->
+<!-- AI Context Standard v0.8 - Adopted: 2026-03-25 -->
 # AI Assistant Initialization Guide
 
 **Purpose**: Initialize AI context for the baseline-fluctuation-mystery repository  
