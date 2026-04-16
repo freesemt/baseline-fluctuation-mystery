@@ -38,3 +38,10 @@ baseline-fluctuation-mystery/
 ## Relationship to other repos
 
 This repo is part of the **molass workspace** (8 repos). The baseline fluctuation mystery is referenced in [PAPER_VISION_DISCUSSION.md](../modeling-vs-model_free/PAPER_VISION_DISCUSSION.md) §8 as potential supporting evidence for Paper (b) (Realistic Physical Constraints).
+
+---
+
+## Notebook workflow
+
+See [NOTEBOOK_CONVENTIONS.md v0.1.0](https://github.com/freesemt/ai-context-standard/blob/main/NOTEBOOK_CONVENTIONS.md)  
+Kernel preference: global Python (`py`). Do not create venvs.
